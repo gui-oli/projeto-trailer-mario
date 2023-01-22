@@ -9,9 +9,7 @@ const botaoTrailer = document.querySelector(".botao-trailer");
 const botaoFechar = document.querySelector(".fechar-modal")
 const modal = document.querySelector(".modal")
 const video = document.getElementById("video");
-
-const linkVideo = video.scr;
-console.log(video.src);
+const linkVideo = video.src;
 
 function alternarModal(){
   modal.classList.toggle("aberto");
@@ -19,8 +17,7 @@ function alternarModal(){
 
 botaoTrailer.addEventListener("click", () => {
   alternarModal();
-  video.setAttribute("src", video.src);
-  console.log(video.src);
+  video.setAttribute("src", linkVideo);
 })
 
 botaoFechar.addEventListener("click", () => {
